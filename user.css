@@ -16,6 +16,11 @@
   flex-wrap: wrap;
 }
 
+/* Changes track list hover */
+.main-trackList-trackListRow:hover {
+  background-color: #1d2021;
+}
+
 /* Easier to see search things */
 div.main-card-card + div > button[aria-label="Remove"] {
   background-color: var(--spice-main);
@@ -181,6 +186,11 @@ div[aria-label="Already added"] > div > div > button.main-button-primary {
 /* Make scrollbar transparent */
 .os-scrollbar {
   opacity: 0 !important;
+}
+
+/* Changes queue tab bar bg */
+.queue-tabBar-header > a {
+  --spice-tab-active: #1d2021;
 }
 
 /* Remove gradients from playlist */
