@@ -21,6 +21,11 @@ div.main-card-card + div > button[aria-label="Remove"] {
   background-color: var(--spice-main);
 }
 
+/* Search bar fix */
+.x-searchInput-searchInputInput {
+  background-color: var(--spice-text);
+}
+
 /* Thinner nav bar */
 .main-navBar-navBarLink {
   padding-left: 10px;
