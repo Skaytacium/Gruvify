@@ -124,9 +124,10 @@ img.main-image-image[loading="lazy"][aria-hidden="false"] {
   color: var(--spice-main);
 }
 
-/* Gives it a bg while hovering */
+/* Gives it a bg while hovering and rounds right corners */
 .main-rootlist-rootlistItem:hover {
   background-color: var(--spice-text);
+  border-radius: 0 8px 8px 0;
 }
 
 /* Removes arrows and changes width */
