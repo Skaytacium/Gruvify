@@ -16,9 +16,40 @@
   flex-wrap: wrap;
 }
 
+/* Change explicit color */
+span[aria-label="Explicit"] {
+  background-color: var(--spice-text);
+}
+
 /* Changes track list hover */
+.main-trackList-selected,
 .main-trackList-trackListRow:hover {
-  background-color: #1d2021;
+  background-color: var(--spice-text) !important;
+}
+.main-trackList-selected span[aria-label="Explicit"],
+.main-trackList-trackListRow:hover span[aria-label="Explicit"] {
+  color: var(--spice-text);
+  background-color: var(--spice-main);
+}
+.main-trackList-selected .main-addButton-button,
+.main-trackList-trackListRow:hover .main-addButton-button,
+.main-trackList-selected .main-trackList-rowTitle,
+.main-trackList-trackListRow:hover .main-trackList-rowTitle,
+.main-trackList-selected .main-trackList-rowSubTitle > a,
+.main-trackList-trackListRow:hover .main-trackList-rowSubTitle > a,
+.main-trackList-selected .main-trackList-rowSectionVariable > *,
+.main-trackList-trackListRow:hover .main-trackList-rowSectionVariable > *,
+.main-trackList-selected .main-trackList-rowDuration,
+.main-trackList-trackListRow:hover .main-trackList-rowDuration {
+  color: var(--spice-main) !important;
+}
+
+/* Changes play button and triple dots */
+.main-trackList-rowImagePlayButton {
+  color: var(--spice-main);
+}
+button.main-trackList-rowMoreButton {
+  color: var(--spice-main) !important;
 }
 
 /* Easier to see search things */
@@ -71,7 +102,7 @@ div.main-card-card + div > button[aria-label="Remove"] {
 /* Change play button colors */
 .encore-dark-theme .encore-bright-accent-set {
   --background-highlight: #d5c4a1;
-  --background-press: #d5c4a1
+  --background-press: #d5c4a1;
 }
 
 /* Change progress bar bg */
@@ -174,7 +205,7 @@ div.main-gridContainer-gridContainer > div > div > div > div {
 
 /* Gives liked songs a different bg */
 div.main-gridContainer-gridContainer > div[class^="main-heroCard-card"] {
-  background: #1d2021;
+  background: var(--spice-main);
 }
 
 /* Change "Don't add" color */
@@ -190,7 +221,10 @@ div[aria-label="Already added"] > div > div > button.main-button-primary {
 
 /* Changes queue tab bar bg */
 .queue-tabBar-header > a {
-  --spice-tab-active: #1d2021;
+  --spice-tab-active: var(--spice-text);
+}
+.oaNVBli46GtVjaQKB15g {
+  color: var(--spice-main);
 }
 
 /* Remove gradients from playlist */
@@ -224,21 +258,27 @@ figure.main-avatar-avatar + div > svg[role="img"] {
 } */
 
 /* Sets a bunch of things to be the same color as the main color */
+/* Friends */
 .main-buddyFeed-activityMetadata .main-buddyFeed-username a,
 .main-buddyFeed-activityMetadata .main-buddyFeed-artistAndTrackName a,
 .main-buddyFeed-activityMetadata .main-buddyFeed-playbackContextLink,
 .main-buddyFeed-activityMetadata .main-buddyFeed-usernameAndTimestamp,
+/* Album / playlist metadata */
 .main-entityHeader-divider,
 .main-entityHeader-divider > span,
 .main-entityHeader-subtitle.main-entityHeader-gray,
+/* Download and triple dot */
 .main-actionBar-ActionBarRow > button[aria-label="Download"],
 .main-actionBar-ActionBarRow > button[aria-label^="More options for"],
 .main-contextMenu-menuItemButton,
 .main-addButton-button,
+/* Search bar in playlist */
 div[role="search"] > input::placeholder,
 div[role="search"] > button,
 div[role="search"] + button,
+/* Buttom button */
 button[aria-label="Queue"],
+/* Add friends button */
 button[aria-label="Add Friends"] {
   color: var(--spice-text);
 }
