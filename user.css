@@ -16,6 +16,11 @@
   flex-wrap: wrap;
 }
 
+/* Easier to see search things */
+div.main-card-card + div > button[aria-label="Remove"] {
+  background-color: var(--spice-main);
+}
+
 /* Thinner nav bar */
 .main-navBar-navBarLink {
   padding-left: 10px;
