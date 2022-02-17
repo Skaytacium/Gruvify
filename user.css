@@ -1,37 +1,50 @@
 /* More to the left */
 .main-rootlist-rootlistItem {
-  padding-left: 10px;
+	padding-left: 10px;
 }
 
 /* Remove text in navbar */
 .main-navBar-entryPoints span.main-type-mestoBold {
-  font-size: 0px;
+	font-size: 0px;
 }
 
 /* Make it horizontal */
 #spicetify-sticky-list {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 /* Changes playing icon color */
 .main-trackList-playingIcon {
-  filter: brightness(0) saturate(100%) invert(93%) sepia(6%) saturate(1357%) hue-rotate(353deg) brightness(95%) contrast(93%);;
+	filter: brightness(0) saturate(100%) invert(93%) sepia(6%) saturate(1357%)
+		hue-rotate(353deg) brightness(95%) contrast(93%);
+}
+
+/* Reccomendation bgs */
+div.main-shelf-topRow + div.main-gridContainer-gridContainer > div > div {
+	background-color: #1d2021;
+	border-radius: 5px;
+}
+
+/* Context menu BG */
+.main-contextMenu-menuItemButton[aria-expanded=true],
+.main-contextMenu-menuItemButton:hover {
+	background-color: #1d2021;
+	color: #fbf1c7;
 }
 
 /* Changes track list hover */
 .main-trackList-selected,
 .main-trackList-trackListRow:hover,
 .main-trackList-trackListRow:focus-within {
-  background-color: var(--spice-text) !important;
+	background-color: #1d2021 !important;
 }
 .main-trackList-selected span[aria-label="Explicit"],
 .main-trackList-trackListRow:hover span[aria-label="Explicit"],
 .main-trackList-trackListRow:focus-within span[aria-label="Explicit"] {
-  color: var(--spice-text);
-  background-color: var(--spice-main) !important;
+	background-color: #fbf1c7 !important;
 }
 .main-trackList-selected .main-addButton-button,
 .main-trackList-trackListRow:hover .main-addButton-button,
@@ -44,148 +57,164 @@
 .main-trackList-trackListRow:focus-within .main-trackList-rowSubTitle > a,
 .main-trackList-selected .main-trackList-rowSectionVariable > *,
 .main-trackList-trackListRow:hover .main-trackList-rowSectionVariable > *,
-.main-trackList-trackListRow:focus-within .main-trackList-rowSectionVariable > *,
+.main-trackList-trackListRow:focus-within
+	.main-trackList-rowSectionVariable
+	> *,
 .main-trackList-selected .main-trackList-rowDuration,
 .main-trackList-trackListRow:hover .main-trackList-rowDuration,
 .main-trackList-trackListRow:focus-within .main-trackList-rowDuration {
-  color: var(--spice-main) !important;
+	color: #fbf1c7 !important;
 }
 
 /* Change explicit color */
 span[aria-label="Explicit"] {
-  background-color: var(--spice-text);
+	background-color: #ebdbb2;
 }
 
 /* Changes play button and triple dots */
 .main-trackList-rowImagePlayButton {
-  color: var(--spice-main);
+	color: #fbf1c7;
 }
 button.main-trackList-rowMoreButton {
-  color: var(--spice-main) !important;
+	color: #fbf1c7 !important;
 }
 
 /* Easier to see search things */
 div.main-card-card + div > button[aria-label="Remove"] {
-  background-color: var(--spice-main);
+	background-color: #282828;
+}
+
+/* Card backgrounds at home */
+.main-card-card,
+.main-card-card:hover {
+	background: #1d2021;
+}
+
+/* Card text colors when hovering */
+.main-card-card:hover > div > div.main-card-cardMetadata > * {
+	color: #fbf1c7 !important;
 }
 
 /* Search bar fix */
 .x-searchInput-searchInputInput {
-  background-color: var(--spice-text);
+	background-color: #1d2021;
+}
+.x-searchInput-searchInputSearchIcon {
+	color: #ebdbb2;
 }
 
 /* Thinner nav bar */
 .main-navBar-navBarLink {
-  padding-left: 10px;
-  height: 25px;
-  line-height: 25px;
-  gap: 0;
-  padding: 0;
+	padding-left: 10px;
+	height: 25px;
+	line-height: 25px;
+	gap: 0;
+	padding: 0;
 }
 .main-navBar-navBarItem {
-  padding: 0 6px;
+	padding: 0 6px;
 }
 
 /* Remove gradient at home */
 .main-home-homeHeader {
-  background-image: none;
-  transition: none;
-  background-color: var(--spice-main) !important;
+	background-image: none;
+	transition: none;
+	background-color: #282828 !important;
 }
 
 /* Change bar gradient */
 .main-topBar-overlay {
-  background-color: var(--spice-main) !important;
+	background-color: #282828 !important;
 }
 
 /* Removes background from playlists */
 .main-entityHeader-backgroundColor {
-  background-color: var(--spice-main) !important;
+	background-color: #282828 !important;
 }
 .main-actionBarBackground-background {
-  background-color: var(--spice-main) !important;
+	background-color: #282828 !important;
 }
 
 /* Add bg to time elapsed */
 .playback-bar__progress-time-elapsed.main-type-finale {
-  background-color: var(--spice-main);
+	background-color: #282828;
 }
 
 /* Change play button colors */
 .encore-dark-theme .encore-bright-accent-set {
-  --background-highlight: #d5c4a1;
-  --background-press: #d5c4a1;
+	--background-highlight: #fbf1c7;
+	--background-press: #d5c4a1;
 }
 
 /* Change progress bar bg */
 .x-progressBar-progressBarBg {
-  background-color: var(--spice-main);
+	background-color: #1d2021;
 }
 
 /* Removes background from playlist images */
 .main-entityHeader-shadow {
-  box-shadow: none;
+	box-shadow: none;
 }
 
 /* Don't show buttons if they aren't available */
 .main-topBar-button:disabled {
-  opacity: 0 !important;
+	opacity: 0 !important;
 }
 
 /* Don't show top bar backgrounds */
 .main-topBar-button {
-  background-color: transparent !important;
+	background-color: transparent !important;
 }
 .main-userWidget-box {
-  background-color: transparent !important;
+	background-color: transparent !important;
 }
 
 /* Different background for home reccomendations */
 div.main-shelf-topRow + div > div {
-  background-color: var(--spice-main);
+	background-color: #282828;
 }
 
 /* No transition for home reccomendations */
 div.main-shelf-topRow + div > div:hover {
-  background-color: var(--spice-main);
+	background-color: #282828;
 }
 
 /* Remove box shadow from feed */
 .main-buddyFeed-buddyFeed {
-  box-shadow: none;
+	box-shadow: none;
 }
 
 /* Change cover art border */
 .main-coverSlotCollapsed-container .cover-art-image {
-  border-radius: 0% !important;
+	border-radius: 0% !important;
 }
 
 /* Change prompt background */
 div[aria-label="Already added"] > div {
-  background-color: var(--spice-main);
-  color: var(--spice-text);
+	background-color: #282828;
+	color: #ebdbb2;
 }
 
 /* Change "Add anyway" color */
 div[aria-label="Already added"] > div > div > button.main-button-tertiary {
-  background-color: var(--spice-main);
-  color: var(--spice-text);
+	background-color: #282828;
+	color: #ebdbb2;
 }
 
 /* Make recommendations well rounded */
 img.main-image-image[loading="lazy"][aria-hidden="false"] {
-  border-radius: 4px;
+	border-radius: 4px;
 }
 
 /* Makes it white when hovering */
 .main-rootlist-rootlistItem:hover > a > span {
-  color: var(--spice-main);
+	color: #fbf1c7;
 }
 
 /* Gives it a bg while hovering and rounds right corners */
 .main-rootlist-rootlistItem:hover {
-  background-color: var(--spice-text);
-  border-radius: 0 8px 8px 0;
+	background-color: #1d2021;
+	border-radius: 0 8px 8px 0;
 }
 
 /* Removes arrows and changes width */
@@ -193,85 +222,84 @@ img.main-image-image[loading="lazy"][aria-hidden="false"] {
 .main-rootlist-expandArrow:active,
 .main-rootlist-expandArrow:focus-within,
 .main-rootlist-expandArrow:hover {
-  color: transparent;
-  background-color: var(--spice-text);
-  width: 25px;
-  height: 25px;
-  margin-top: auto;
-  margin-bottom: auto;
+	color: transparent;
+	background-color: #ebdbb2;
+	width: 25px;
+	height: 25px;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 /* Gives it a bg while hovering */
 .main-rootlist-rootlistItem:hover .main-rootlist-expandArrow {
-  background-color: var(--spice-main);
+	background-color: #fbf1c7;
 }
 
 /* Removes box shadows from card images */
 .main-cardImage-imageWrapper {
-  box-shadow: none;
+	box-shadow: none;
 }
 /* ...from recommendations */
 div.main-gridContainer-gridContainer > div > div > div > div {
-  box-shadow: none !important;
+	box-shadow: none !important;
 }
 
 /* Gives liked songs a different bg */
 div.main-gridContainer-gridContainer > div[class^="main-heroCard-card"] {
-  background: var(--spice-main);
+	background: #1d2021;
 }
 
 /* Change "Don't add" color */
 div[aria-label="Already added"] > div > div > button.main-button-primary {
-  background-color: var(--spice-main);
-  color: var(--spice-text);
+	background-color: #282828;
+	color: #ebdbb2;
 }
 
 /* Make scrollbar transparent */
 .os-scrollbar {
-  opacity: 0 !important;
+	opacity: 0 !important;
 }
 
 /* Changes queue tab bar bg */
 .queue-tabBar-header > a {
-  --spice-tab-active: var(--spice-text);
+	--spice-tab-active: #1d2021;
 }
 .oaNVBli46GtVjaQKB15g {
-  color: var(--spice-main);
+	color: #ebdbb2;
 }
 
 /* Remove gradients from playlist */
 .main-entityHeader-overlay {
-  background: none;
+	background: none;
 }
 .main-actionBarBackground-background {
-  background-image: none;
+	background-image: none;
 }
 
 /* Thinner list */
 .main-rootlist-rootlistItemLink {
-  height: 25px;
-  line-height: 25px;
+	height: 25px;
+	line-height: 25px;
 }
 
 /* Make liked heart a proper color */
 figure.main-avatar-avatar + div > svg[role="img"] {
-  color: var(--spice-main);
+	color: #282828;
 }
 
 /* No gradient */
 .main-rootlist-rootlistDividerGradient {
-  display: none;
+	display: none;
 }
 
 /* Proper divider between root list and navigation bar */
 /* .main-rootlist-rootlistDivider {
-  background-color: var(--spice-text);
-  margin: 8px 0 0 0;
+	background-color: #EBDBB2;
+	margin: 8px 0 0 0;
 } */
 
 /* Sets a bunch of things to be the same color as the main color */
 /* Friends */
-.main-buddyFeed-activityMetadata .main-buddyFeed-username a,
 .main-buddyFeed-activityMetadata .main-buddyFeed-artistAndTrackName a,
 .main-buddyFeed-activityMetadata .main-buddyFeed-playbackContextLink,
 .main-buddyFeed-activityMetadata .main-buddyFeed-usernameAndTimestamp,
@@ -292,7 +320,10 @@ div[role="search"] + button,
 button[aria-label="Queue"],
 /* Add friends button */
 button[aria-label="Add Friends"] {
-  color: var(--spice-text);
+	color: #ebdbb2;
+}
+.main-buddyFeed-activityMetadata .main-buddyFeed-username a {
+	color: #fbf1c7;
 }
 
 /* From the sleek theme */
@@ -301,81 +332,81 @@ button[aria-label="Add Friends"] {
 /* shift bar up when connect bar is visible */
 .now-playing-bar-container > div:first-child:nth-last-child(2) .playback-bar,
 .main-nowPlayingBar-container
-  > div:first-child:nth-last-child(2)
-  .playback-bar {
-  bottom: 107px;
+	> div:first-child:nth-last-child(2)
+	.playback-bar {
+	bottom: 107px;
 }
 
 /* round cover art when collapsed */
 .main-coverSlotCollapsed-container .cover-art-image {
-  border-radius: 10%;
-  transition-duration: 0.15s;
+	border-radius: 10%;
+	transition-duration: 0.15s;
 }
 
 .main-coverSlotExpandedCollapseButton-collapseButton {
-  right: 10px !important;
-  top: 10px !important;
+	right: 10px !important;
+	top: 10px !important;
 }
 
 /* hide and move progress time location */
 .playback-bar__progress-time-elapsed.main-type-finale {
-  opacity: 0;
-  position: absolute;
-  bottom: 13px;
-  left: 0;
-  transition-duration: 0.15s;
+	opacity: 0;
+	position: absolute;
+	bottom: 13px;
+	left: 0;
+	transition-duration: 0.15s;
 }
 
 .main-playbackBarRemainingTime-container {
-  opacity: 0;
-  position: absolute;
-  bottom: 13px;
-  right: 0;
-  transition-duration: 0.15s;
+	opacity: 0;
+	position: absolute;
+	bottom: 13px;
+	right: 0;
+	transition-duration: 0.15s;
 }
 
 /* show time on hover */
 .playback-bar:hover .playback-bar__progress-time-elapsed.main-type-finale,
 .playback-bar:hover .main-playbackBarRemainingTime-container {
-  opacity: 1;
+	opacity: 1;
 }
 
 /* move progress bar */
 .playback-bar {
-  width: 100%;
-  bottom: 83px;
-  position: absolute;
+	width: 100%;
+	bottom: 83px;
+	position: absolute;
 }
 
 .player-controls__buttons {
-  transform: translateY(6px);
-  align-items: center;
+	transform: translateY(6px);
+	align-items: center;
 }
 
 /* change progress bar color */
 .playback-bar .progress-bar__fg {
-  background-color: var(--spice-playback-bar);
+	background-color: var(--spice-playback-bar);
 }
 
 /* change appearance of play-button */
 .main-playPauseButton-button {
-  background-color: var(--spice-player);
-  color: var(--spice-text);
-  transition-duration: 0.15s !important;
+	background-color: var(--spice-player);
+	color: #ebdbb2;
+	transition-duration: 0.15s !important;
 }
 
 .main-playPauseButton-button svg {
-  height: 21px;
-  width: 21px;
+	height: 21px;
+	width: 21px;
 }
 
 .main-playPauseButton-button:focus,
 .main-playPauseButton-button:hover {
-  transform: scale(1) !important;
-  -webkit-transform: scale(1) !important;
+	transform: scale(1) !important;
+	-webkit-transform: scale(1) !important;
 }
 
 /* change progress bar slider color */
 .progress-bar__slider {
-  background-color: var(--spice-subtext);
+	background-color: var(--spice-subtext);
 }
