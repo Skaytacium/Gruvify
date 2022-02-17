@@ -16,32 +16,44 @@
   flex-wrap: wrap;
 }
 
-/* Change explicit color */
-span[aria-label="Explicit"] {
-  background-color: var(--spice-text);
+/* Changes playing icon color */
+.main-trackList-playingIcon {
+  filter: brightness(0) saturate(100%) invert(93%) sepia(6%) saturate(1357%) hue-rotate(353deg) brightness(95%) contrast(93%);;
 }
 
 /* Changes track list hover */
 .main-trackList-selected,
-.main-trackList-trackListRow:hover {
+.main-trackList-trackListRow:hover,
+.main-trackList-trackListRow:focus-within {
   background-color: var(--spice-text) !important;
 }
 .main-trackList-selected span[aria-label="Explicit"],
-.main-trackList-trackListRow:hover span[aria-label="Explicit"] {
+.main-trackList-trackListRow:hover span[aria-label="Explicit"],
+.main-trackList-trackListRow:focus-within span[aria-label="Explicit"] {
   color: var(--spice-text);
-  background-color: var(--spice-main);
+  background-color: var(--spice-main) !important;
 }
 .main-trackList-selected .main-addButton-button,
 .main-trackList-trackListRow:hover .main-addButton-button,
+.main-trackList-trackListRow:focus-within .main-addButton-button,
 .main-trackList-selected .main-trackList-rowTitle,
 .main-trackList-trackListRow:hover .main-trackList-rowTitle,
+.main-trackList-trackListRow:focus-within .main-trackList-rowTitle,
 .main-trackList-selected .main-trackList-rowSubTitle > a,
 .main-trackList-trackListRow:hover .main-trackList-rowSubTitle > a,
+.main-trackList-trackListRow:focus-within .main-trackList-rowSubTitle > a,
 .main-trackList-selected .main-trackList-rowSectionVariable > *,
 .main-trackList-trackListRow:hover .main-trackList-rowSectionVariable > *,
+.main-trackList-trackListRow:focus-within .main-trackList-rowSectionVariable > *,
 .main-trackList-selected .main-trackList-rowDuration,
-.main-trackList-trackListRow:hover .main-trackList-rowDuration {
+.main-trackList-trackListRow:hover .main-trackList-rowDuration,
+.main-trackList-trackListRow:focus-within .main-trackList-rowDuration {
   color: var(--spice-main) !important;
+}
+
+/* Change explicit color */
+span[aria-label="Explicit"] {
+  background-color: var(--spice-text);
 }
 
 /* Changes play button and triple dots */
