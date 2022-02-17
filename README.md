@@ -1,9 +1,9 @@
 # Skotify
 ## Skaytacium's spicetify theme
 
-### 2 color edition
+### 3 color edition
 
-The ultra minimalistic gruvbox (only has 2 colors...)
+The not super ultra minimalistic gruvbox (only has 3 colors...)
 
 ### Images
 
