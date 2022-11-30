@@ -1,0 +1,22 @@
+// More to the left
+.main-rootlist-rootlist
+	--left-sidebar-padding-left: 10px
+	--left-sidebar-item-indentation-width: 15px
+	--left-sidebar-item-height: 27px
+
+// Lightens bg when hovering
+.main-rootlist-rootlistItem:hover
+	background-color: var(--spice-selected-row)
+	border-radius: 0 8px 8px 0
+
+// Removes arrows, changes width
+.main-rootlist-expandArrow,
+.main-rootlist-expandArrow:active,
+.main-rootlist-expandArrow:focus-within,
+.main-rootlist-expandArrow:hover
+	color: transparent
+	background-color: var(--spice-text)
+	width: 15px
+	height: 15px
+	margin-top: auto
+	margin-bottom: auto

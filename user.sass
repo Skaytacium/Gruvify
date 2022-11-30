@@ -1,0 +1,99 @@
+@use 'cover'
+@use 'duration'
+@use 'gradient'
+@use 'navbar'
+@use 'rootlist'
+
+// Change lyrics BG
+.lyrics-lyrics-container
+	--lyrics-color-passed: var(--spice-text) !important
+	--lyrics-color-active: var(--spice-button-active) !important
+	--lyrics-color-inactive: var(--spice-text) !important
+	--lyrics-color-background: var(--spice-main) !important
+
+// No transition for home reccomendations
+div.main-shelf-topRow + div > div:hover
+	background-color: var(--spice-selected-row)
+
+// Don't show top bar backgrounds
+.main-topBar-background
+	background-color: var(--spice-main) !important
+.main-userWidget-box
+	background-color: var(--spice-main)
+
+// Don't show top bar button
+.main-topBar-topbarContent > .main-playButton-PlayButton
+	display: none
+
+// Centre top bar title and make it bigger
+.main-entityHeader-topbarTitle
+	margin: auto
+	font-size: 35px
+
+// Different background for home reccomendations
+div.main-shelf-topRow + div > div
+	background-color: var(--spice-selected-row)
+
+// Subdued text color is normal
+.encore-dark-theme, .encore-light-theme
+	--text-subdued: var(--spice-text)
+
+// Main color of text
+:root
+	--spice-rgb-selected-row: var(--spice-text)
+
+// Context menu hover
+.main-contextMenu-menuItemButton:hover
+	background-color: var(--spice-selected-row)
+
+// Change explicit color
+span[aria-label="Explicit"]
+	background-color: var(--spice-text)
+
+// Tracks hover
+.main-trackList-trackListRow:focus-within, .main-trackList-trackListRow:hover
+	background-color: var(--spice-selected-row)
+
+// Card backgrounds at home
+.main-card-card,
+.main-card-card:hover
+	background: var(--spice-selected-row)
+
+// Search bar fix
+.x-searchInput-searchInputInput
+	background-color: var(--spice-selected-row)
+.x-searchInput-searchInputSearchIcon
+	color: var(--spice-text)
+
+// Back and forward button
+.main-topBar-button:hover
+	background-color: var(--spice-selected-row) !important
+
+// Don't show buttons if they aren't available
+.main-topBar-button:disabled
+	opacity: 0 !important
+
+// Change readding prompt background
+div[aria-label="Already added"] > div
+	background-color: var(--spice-main)
+	color: var(--spice-text)
+// Change "Add anyway" color
+div[aria-label="Already added"] > div > div > button.main-button-tertiary
+	background-color: var(--spice-text)
+	color: var(--spice-main)
+
+// Change heart and equalizer colors
+.main-trackList-playingIcon, .control-button-heart>svg
+	filter: brightness(0) saturate(100%) invert(89%) sepia(25%) saturate(349%) hue-rotate(351deg) brightness(89%) contrast(87%)
+
+// Make recommendations well rounded
+img.main-image-image[loading="lazy"][aria-hidden="false"]
+	border-radius: 4px
+
+// Gives liked a different bg
+div.main-gridContainer-gridContainer > div[class^="main-heroCard-card"]
+	background: var(--spice-selected-row)
+
+// Make scrollbar transparent
+.os-scrollbar
+	opacity: 0 !important
