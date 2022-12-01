@@ -1,0 +1,22 @@
+// Don't show top bar backgrounds
+.main-topBar-background
+	background-color: var(--spice-main) !important
+.main-userWidget-box
+	background-color: var(--spice-main)
+
+// Don't show top bar button
+.main-topBar-topbarContent > .main-playButton-PlayButton
+	display: none
+
+// Centre top bar title and make it bigger
+.main-entityHeader-topbarTitle
+	margin: auto
+	font-size: 35px
+
+// Back and forward button
+.main-topBar-button, .main-topBar-button:hover
+	background-color: var(--spice-selected-row) !important
+
+// Don't show buttons if they aren't available
+.main-topBar-button:disabled
+	opacity: 0 !important
