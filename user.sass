@@ -60,5 +60,17 @@ div.main-gridContainer-gridContainer > div[class^="main-heroCard-card"]
 	top: 10px
 
 // Profile tracks
-div.main-shelf-topRow + div > div, div.main-shelf-topRow + div > div:hover
-	background-color: transparent
+div.main-rootlist-wrapper,
+div.main-rootlist-wrapper:hover
+	background-color: transparent !important
+
+// Settings toggle inputs
+span.x-toggle-indicatorWrapper
+	width: 24px
+	background-color: var(--spice-selected-row)
+span.x-toggle-indicator
+	display: none
+
+// Bookmark progress bar background
+div.bookmark-progress
+	background-color: var(--spice-selected-row)
