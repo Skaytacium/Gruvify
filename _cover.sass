@@ -1,16 +1,22 @@
-// Bigger cover when collapsed
-.main-coverSlotCollapsed-container .cover-art-image
-	height: 76px
-	width: 76px
-	left: -12px
-	top: -7px
-	transition-duration: 0.15s
+// No rounded corners
+.main-coverSlotCollapsed-navAltContainer
+	border-radius: 0
 
-// Push to the left once expanded
-.main-nowPlayingWidget-coverExpanded .cover-art-image
-	left: -30px
+// No padding on the left of playing bar
+.main-nowPlayingBar-nowPlayingBar
+	padding: 0 16px 0 0 
 
-// Button position
-.main-coverSlotCollapsed-expandButton
-	right: 0 !important
-	top: -4px
+// Better positioning
+.main-coverSlotCollapsed-container
+	left: 4px
+	padding-right: 4px
+	top: 2px
+
+// Bigger cover area
+.main-nowPlayingWidget-coverArt > div
+	width: 80px !important
+	height: 80px !important
+
+// Move more to the left when expanded
+[dir=ltr] .main-nowPlayingWidget-coverExpanded
+	transform: translateX(-84px)
