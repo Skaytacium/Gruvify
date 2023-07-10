@@ -7,6 +7,7 @@
 @use 'topbar'
 @use 'home'
 @use 'search'
+@use 'bookmark'
 
 // Change lyrics BG
 div[style*="--lyrics-color"]
@@ -16,9 +17,10 @@ div[style*="--lyrics-color"]
 	--lyrics-color-background: var(--spice-main) !important
 
 // Subdued text color is normal
-.encore-dark-theme, .encore-light-theme
+.encore-dark-theme, .encore-light-theme, .encore-inverted-light-set
 	--text-subdued: var(--spice-text)
 	--essential-subdued: var(--spice-text)
+	--background-highlight: var(--spice-selected-row) !important
 
 // Main color of text
 :root
@@ -31,10 +33,6 @@ div[style*="--lyrics-color"]
 .main-contextMenu-menu
 	border: var(--spice-selected-row) 3px solid
 
-// Bookmark play button
-div.bookmark-card-info ~ button
-	background-color: var(--spice-main)
-	border: none
 
 // Change reading prompt background
 div[aria-label="Already added"] > div
@@ -75,13 +73,8 @@ span.x-toggle-indicatorWrapper
 span.x-toggle-indicator
 	display: none
 
-// Bookmark progress bar background
-div.bookmark-progress
-	background-color: var(--spice-selected-row)
-
-// Bookmark play button
-div.ButtonInner-md-iconOnly
-	background-color: var(--spice-main)
-
-div.ButtonInner-md-iconOnly > button.main-playButton-PlayButton.main-playButton-primary
-	color: var(--spice-play-button)
+// Vim key theming
+.vim-key
+	background-color: var(--spice-selected-row) !important
+	border: solid 2px var(--spice-text) !important
+	color: var(--spice-text) !important
