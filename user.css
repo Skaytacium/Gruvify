@@ -176,11 +176,12 @@ div[aria-labelledby=listrow-title-top-artists-this-month], div[aria-labelledby=l
 }
 
 .Root__right-sidebar {
-  right: -25px;
+  right: -15px;
 }
 
 .main-nowPlayingView-section, .main-nowPlayingView-aboutArtistV2TextContent {
   background-color: var(--spice-selected-row);
+  border-radius: 4px;
 }
 
 .main-buddyFeed-header {
