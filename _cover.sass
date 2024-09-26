@@ -1,22 +1,25 @@
 // No rounded corners
-.main-coverSlotCollapsed-navAltContainer
+.main-coverSlotCollapsed-navAltContainer, .main-coverSlotCollapsed-navAltContainer button
 	border-radius: 0
-
-// No padding on the left of playing bar
-.main-nowPlayingBar-nowPlayingBar
-	padding: 0 16px 0 0 
 
 // Better positioning
 .main-coverSlotCollapsed-container
-	left: 4px
+	left: -14px
 	padding-right: 4px
-	top: 2px
+	top: 5px
 
 // Bigger cover area
 .main-nowPlayingWidget-coverArt > div
-	width: 80px !important
-	height: 80px !important
+	width: 78px !important
+	height: 78px !important
 
-// Move more to the left when expanded
-[dir=ltr] .main-nowPlayingWidget-coverExpanded
-	transform: translateX(-84px)
+// Expand button opacity
+.main-coverSlotCollapsed-container:hover .main-coverSlotCollapsed-expandButton
+	opacity: 0
+
+// Expand button coverage
+.main-coverSlotCollapsed-expandButton
+	top: 0
+	right: 0
+	width: 100%
+	height: 100%

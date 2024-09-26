@@ -1,16 +1,14 @@
-// Search bar fix
-.x-searchInput-searchInputInput, .x-searchInput-searchInputInput:hover
+// Search bar background
+form .main-topBar-searchBar
+	background-color: var(--spice-selected-row) !important
+form:hover .main-topBar-searchBar
+	background-color: var(--spice-selected-row) !important
+
+// No little border before explore
+.IconContainer-trailing > div
+	border-inline-start: none
+	-webkit-border-start: none
+
+// Search top result background
+div[data-testid="top-result-card"] > div
 	background-color: var(--spice-selected-row)
-.x-searchInput-searchInputSearchIcon
-	color: var(--spice-text)
-
-// Search top result border
-.main-heroCard-cardLink
-	border: #1d2021 3px solid
-	border-radius: 10px
-
-// Search text to see
-.x-searchInput-searchInputInput
-	color: var(--spice-text) !important
-
-

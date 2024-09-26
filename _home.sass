@@ -1,13 +1,10 @@
+// No extra colors (topbar)
+.main-home-filterChipsSection > div
+	background-color: var(--spice-main) !important
+
 // No transition and different bg for home reccomendations
-div.main-shelf-topRow + div > div,
-div.main-shelf-topRow + div > div:hover
-	background-color: var(--spice-selected-row)
-
-// Card backgrounds at home
-.main-card-card,
-.main-card-card:hover
-	background: var(--spice-selected-row)
-
-// Make recommendations well rounded
-img.main-image-image[loading="lazy"][aria-hidden="false"]
-	border-radius: 4px
+.view-homeShortcutsGrid-shortcut,
+.view-homeShortcutsGrid-shortcut:hover
+	background-color: var(--spice-selected-row) !important
+	transition: none
+	-webkit-transition: none
