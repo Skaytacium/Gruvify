@@ -6,14 +6,17 @@
 @use 'home'
 @use 'lyrics'
 @use 'navigator'
+@use 'notif'
 @use 'playlist'
 @use 'profile'
 @use 'rightbar'
 @use 'rootlist'
+@use 'save'
 @use 'search'
 @use 'settings'
 @use 'shadow'
 @use 'tracks'
+
 
 // Main color of text
 :root
@@ -50,3 +53,7 @@ div[aria-label="Already added"] > div
 div[aria-label="Already added"] > div > div > button.main-button-tertiary
 	background-color: var(--spice-text)
 	color: var(--spice-main)
+
+// Vim key background
+span.vim-key
+	background-color: var(--spice-selected-row)

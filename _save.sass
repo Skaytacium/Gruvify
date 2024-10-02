@@ -1,0 +1,56 @@
+// Buttons placeholder
+div#context-menu > form > div:last-child
+	height: 36px
+	padding: 0
+	background-color: var(--spice-main)
+	border-radius: 0 0 4px 4px
+
+// Cancel button
+div#context-menu > form > div:last-child > button
+	font-weight: 400
+	text-decoration: underline
+	margin: auto
+
+// Done button
+div#context-menu > form > div:last-child > button > span
+	background-color: var(--spice-main)
+	color: var(--spice-text)
+	padding: 0
+	left: -5px
+
+// Basic styling (a better selector could be found)
+.DquSH3YjnaIIXMZiOvwA
+	background-color: var(--spice-main)
+	border: var(--spice-selected-row) 3px solid
+	border-radius: 4px
+
+// Remove current playlist header
+div#context-menu > form > div:first-child,
+ul[role="menu"][aria-label="Add to playlist menu"] > div:first-child
+	display: none
+
+// Better alignment
+div.x-filterBox-filterInputContainer
+	left: 2px
+	top: 11px
+
+// Same font size as context menu
+div.HeaderArea p[data-encore-id="listRowTitle"]
+	font-size: 14px !important
+	font-weight: 400 !important
+
+// No picture
+div[data-encore-id="listRow"][role="group"] > div.HeaderSideArea
+	display: none
+
+// Proper list sizing and border radius
+div.BoxComponent-group-listRow-naked-minBlockSize_48px
+	gap: 0
+	grid-template-rows: 16px !important
+	border-radius: 4px
+	min-block-size: 0
+	padding-block: 12px
+
+// Padding at the top as well
+ul[role="menu"][aria-label="Add to playlist menu"]
+	padding-top: 8px
