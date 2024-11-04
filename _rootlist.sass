@@ -11,14 +11,17 @@ div.HeaderArea > div[class*=TrailingSlot]
 	width: 24px
 
 // Better expansion indicator
-button[aria-label="Expand folder"], button[aria-label="Collapse folder"]
+
+div.HeaderArea > div > button.Button-buttonTertiary-small-small-iconOnly-data-skip-in-keyboard-nav-isUsingKeyboard-useBrowserDefaultFocusStyle-condensedAll,
+div.HeaderArea > div > button.Button-buttonTertiary-small-small-iconOnly-data-skip-in-keyboard-nav-useBrowserDefaultFocusStyle-condensedAll
 	width: 100% !important
 	height: 100% !important
 	padding: 0 !important
 	background-color: var(--spice-text)
 
 // No arrow
-button[aria-label="Expand folder"] > span, button[aria-label="Collapse folder"] > span
+div.HeaderArea > div > button.Button-buttonTertiary-small-small-iconOnly-data-skip-in-keyboard-nav-isUsingKeyboard-useBrowserDefaultFocusStyle-condensedAll > span,
+div.HeaderArea > div > button.Button-buttonTertiary-small-small-iconOnly-data-skip-in-keyboard-nav-useBrowserDefaultFocusStyle-condensedAll > span
 	display: none !important
 
 // Collapsed

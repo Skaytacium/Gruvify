@@ -39,8 +39,8 @@ div.HeaderArea p[data-encore-id="listRowTitle"]
 	font-size: 14px !important
 	font-weight: 400 !important
 
-// No picture
-div[data-encore-id="listRow"][role="group"] > div.HeaderSideArea
+// No picture (high specificity because same is used for the compressed rootlist)
+li[role="presentation"] div[data-encore-id="listRow"][role="group"] > div.HeaderSideArea
 	display: none
 
 // Proper list sizing and border radius
