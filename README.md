@@ -16,10 +16,11 @@ Eyesore.
 
 The `main` branch is based on the current Spotify CSS map, the `tricolor` branch is based on the older one, it supports vim keys and bookmarks theming as well (since those extensions aren't available for the newer versions, I can't theme them).
 
-Last working versions (26/09/2024)
+Last working versions (4/11/2024)
 
-Spotify: `1.2.47.364.gf05e5cee`
-Spicetify: `2.38.3`
+Spotify: `1.2.49.439.gfae492c7`
+CSS map: `xpui_2024-10-21_1729514985745_fae492c`
+Spicetify: `2.38.4`
 
 ### Pics?
 
