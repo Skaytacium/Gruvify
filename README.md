@@ -10,6 +10,21 @@ Uses [Sass](https://sass-lang.com/) compiled down to normal CSS.
 
 Eyesore.
 
+### Installation?
+
+Do the following in the spicetify `Themes` folder:
+```sh
+git clone https://github.com/Skaytacium/Gruvify
+cd Gruvify
+npm i -g sass
+sass user.sass user.css
+```
+Change the theme to `Gruvify`
+```sh
+spicetify config current_theme Gruvify
+spicetify apply
+```
+
 ### And?
 
 ~~Supports spicetify's [bookmark extension](https://spicetify.app/docs/advanced-usage/extensions/#bookmark).~~ It still does, but, on older versions (check the tricolor branch).
