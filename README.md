@@ -31,11 +31,11 @@ spicetify apply
 
 The `main` branch is based on the current Spotify CSS map, the `tricolor` branch is based on the older one, it supports vim keys and bookmarks theming as well (since those extensions aren't available for the newer versions, I can't theme them).
 
-Last working versions (4/2]/2025)
+Last working versions (9/3/2025)
 
-Spotify: `1.2.56.502.ga68d2d4f`
-CSS map: `???`
-Spicetify: `v2.38.9`
+Spotify: `1.2.58.498.g6afe77b7`
+CSS map: `xpui_2025-02-24_1740386752460_6afe77b`
+Spicetify: `v2.39.5`
 
 ### Pics?
 
