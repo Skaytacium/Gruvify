@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/3928d669-1255-46df-8b9d-d8a0a63fbaae)# Gruvify
+# Gruvify
 ## Gruvbox spotify theme
 
 ### What?
