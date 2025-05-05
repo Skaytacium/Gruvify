@@ -9,13 +9,11 @@
 	background-color: var(--spice-selected-row)
 	border-radius: 4px
 
-// Friendlist
-// Remove unnecessary header from friend list
-.main-buddyFeed-header
+// Friend list
+// Remove unnecessary header from friend list (and device connection)
+aside#Desktop_PanelContainer_Id > div > div:first-child > div:first-child
 	display: none
 
 // Friend list compress
-.main-buddyFeed-friendActivity
-	padding: 8px 0
-.main-buddyFeed-avatarContainer
-	top: 10px
+aside#Desktop_PanelContainer_Id > div > div > div:last-child > div > div
+	padding: 0 16px

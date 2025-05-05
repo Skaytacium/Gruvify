@@ -12,7 +12,7 @@ Eyesore.
 
 ### Installation?
 
-Do the following in the spicetify `Themes` folder:
+Do the following in the spicetify `Themes` folder (you need `npm`):
 ```sh
 git clone https://github.com/Skaytacium/Gruvify
 cd Gruvify
@@ -31,13 +31,16 @@ spicetify apply
 
 The `main` branch is based on the current Spotify CSS map, the `tricolor` branch is based on the older one, it supports vim keys and bookmarks theming as well (since those extensions aren't available for the newer versions, I can't theme them).
 
-Last working versions (17/3/2025)
+Last working versions (5/5/2025)
 
-
+```
 Spotify für Windows (64 Bit)
-Spotify: `1.2.59.514.g834e17d4`
-CSS map: `???`
-Spicetify: `v2.39.5`
+1.2.62.580.gb27ad23e
+Spicetify v2.40.5
+xpui_2025-04-22_1745322804596_b27ad23
+cef_134.3.11+g7c94248+chromium-134.0.6998.178
+Runtime: Chrome
+```
 
 ### Pics?
 

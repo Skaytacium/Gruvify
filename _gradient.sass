@@ -16,3 +16,9 @@ div.cover-art.shadow
 // ... now playing title
 .main-nowPlayingView-contextItemInfo:before
 	background: none !important
+// ... albums
+section > div.main-entityHeader-container + div:empty
+	display: none
+// ... artist pages
+section > div > div.main-entityHeader-container + div > div:empty
+	display: none
