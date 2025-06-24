@@ -1,6 +1,7 @@
 // Don't change layout when lyrics are on
-.LayoutResizer__resize-bar.LayoutResizer__inline-start
-	display: none
+.Root__top-container:has(.lyrics-lyrics-container)
+	.LayoutResizer__resize-bar.LayoutResizer__inline-start
+		display: none
 
 // Change lyrics colors
 div[style*="--lyrics-color"]
