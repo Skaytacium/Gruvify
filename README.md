@@ -31,7 +31,7 @@ spicetify apply
 
 The `main` branch is based on the current Spotify CSS map, the `tricolor` branch is based on the older one, it supports vim keys and bookmarks theming as well (since those extensions aren't available for the newer versions, I can't theme them).
 
-Last working versions (5/5/2025)
+Last working versions (17/7/2025)
 
 ```
 Spotify für Windows (64 Bit)
