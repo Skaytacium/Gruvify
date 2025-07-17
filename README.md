@@ -35,9 +35,9 @@ Last working versions (5/5/2025)
 
 ```
 Spotify für Windows (64 Bit)
-1.2.62.580.gb27ad23e
-Spicetify v2.40.5
-xpui_2025-04-22_1745322804596_b27ad23
+1.2.68.528.g50f97d42
+Spicetify v2.40.11
+xpui-snapshot_2025-07-11_1752256832688_50f97d4
 cef_134.3.11+g7c94248+chromium-134.0.6998.178
 Runtime: Chrome
 ```
