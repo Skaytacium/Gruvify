@@ -8,8 +8,6 @@
 @use 'cover'
 // deleting confirmation
 @use 'delete'
-// bottom of the screen, playback duration
-@use 'duration'
 // gradient removal
 @use 'gradient'
 // home screen
@@ -20,6 +18,8 @@
 @use 'navigator'
 // general notifications
 @use 'notif'
+// bottom of the screen, playback bar
+@use 'playbar'
 // playlist screen
 @use 'playlist'
 // profile screen
@@ -55,6 +55,10 @@
 	--text-subdued: var(--spice-text)
 	--essential-subdued: var(--spice-text)
 	--background-highlight: var(--spice-selected-row) !important
+	// buttons
+	--background-tinted-base: var(--spice-selected-row)
+	--background-tinted-highlight: var(--spice-selected-row)
+	--background-tinted-press: var(--spice-selected-row)
 
 // Notifications no seperator
 div[data-testid="infinite-scroll-list"] hr
@@ -81,3 +85,7 @@ div[aria-label="Already added"] > div > div > button.main-button-tertiary
 // Vim key background
 span.vim-key
 	background-color: var(--spice-selected-row)
+
+// Playing icon
+img[src="/images/equaliser-green.svg"], img[src="/images/equaliser-animated-green.gif"]
+	filter: brightness(0) saturate(100%) invert(89%) sepia(25%) saturate(349%) hue-rotate(351deg) brightness(89%) contrast(87%)

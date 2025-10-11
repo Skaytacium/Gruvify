@@ -14,6 +14,10 @@ div.HeaderArea > div > button.Button-buttonTertiary-small-iconOnly-isUsingKeyboa
 	padding: 0 !important
 	background-color: var(--spice-text)
 
+// Use the nice GIF for showing something is playing
+// div.main-yourLibraryX-listItem svg[data-encore-id="icon"][role="img"]
+
+
 // No arrow
 div.HeaderArea > div > button.Button-buttonTertiary-small-iconOnly-data-skip-in-keyboard-nav-isUsingKeyboard-useBrowserDefaultFocusStyle-condensedAll > span,
 div.HeaderArea > div > button.Button-buttonTertiary-small-iconOnly-data-skip-in-keyboard-nav-useBrowserDefaultFocusStyle-condensedAll > span
@@ -27,3 +31,10 @@ div.HeaderArea > div > button.Button-buttonTertiary-small-iconOnly-data-skip-in-
 // Proper color for "new playlist" button
 div.main-yourLibraryX-collapseButton + div > button
 	background-color: var(--spice-selected-row)
+
+// Fix library filter colors
+.ChipInnerComponent-sm-selected-secondary,
+.ChipInnerComponent-sm-selected-secondary-isUsingKeyboard,
+.ChipInnerComponent-sm-selected,
+.ChipInnerComponent-sm-selected-isUsingKeyboard
+	background-color: var(--spice-text) !important
