@@ -8,9 +8,9 @@
 	background: transparent !important
 .search-searchCategory-contentArea:before
 	background: transparent !important
-// .main-home-content
-// 	--carousel-start-chevron-gradient: 0 !important
-// 	--carousel-end-chevron-gradient: 0 !important
+// ..most of them
+.search-searchCategory-categoryGrid
+	mask-image: none
 // ... cover art
 div.cover-art.shadow
 	box-shadow: none
@@ -31,4 +31,10 @@ section > div.main-entityHeader-container + div:empty
 	display: none
 // ... artist pages
 section > div > div.main-entityHeader-container + div > div:empty
+	display: none
+// ... save
+div#context-menu > form
+	box-shadow: none
+// ... cancel button in save
+div#context-menu > form > div:last-child::before
 	display: none

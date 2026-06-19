@@ -50,6 +50,10 @@
 #main
 	overflow: hidden
 
+// Spicetify please fix
+.main-genericButton-button
+	color: var(--spice-text)
+
 // Subdued text color is normal
 .encore-dark-theme, .encore-light-theme, .encore-inverted-light-set
 	--text-subdued: var(--spice-text)
@@ -60,6 +64,10 @@
 	--background-tinted-highlight: var(--spice-selected-row)
 	--background-tinted-press: var(--spice-selected-row)
 
+// Not all though.. again, spicetify please fix
+.main-nowPlayingView-mainWrapper
+	--text-subdued: var(--spice-text)
+
 // Notifications no seperator
 div[data-testid="infinite-scroll-list"] hr
 	display: none
@@ -69,8 +77,10 @@ div[data-testid="infinite-scroll-list"] hr
 	opacity: 0 !important
 
 // Don't show top bar backgrounds
-.main-topBar-background
+div.main-topBar-background
 	background-color: var(--spice-main) !important
+div.main-topBar-background > div.main-topBar-overlay, div.main-topBar-background::after
+	display: none
 
 // Change reading prompt background
 div[aria-label="Already added"] > div

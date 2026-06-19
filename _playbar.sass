@@ -22,8 +22,11 @@
 	background-color: var(--spice-main)
 
 // Background color
-.progress-bar
-	--bg-color: var(--spice-selected-row)
+div.x-progressBar-progressBarBg
+	background-color: var(--spice-selected-row)
+// Seek color
+div.x-progressBar-progressFillColor
+	background-color: var(--spice-selected-row)
 
 // Show time on hover
 .playback-bar:hover .playback-bar__progress-time-elapsed,
@@ -33,16 +36,12 @@
 // Move bar
 .playback-bar
 	width: 100%
-	bottom: 80px 
+	bottom: 80px
 	position: absolute
 
 .player-controls__buttons
 	transform: translateY(6px)
 	align-items: center
-
-// Change color
-.playback-bar .progress-bar__fg
-	background-color: var(--spice-playback-bar)
 
 // No button on hover
 .progress-bar__slider

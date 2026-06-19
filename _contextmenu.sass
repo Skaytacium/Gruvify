@@ -1,15 +1,33 @@
-// Context menu hover
-.main-contextMenu-menuItemButton:hover
+// Context menu text
+.main-contextMenu-menuItemButton
+	color: var(--spice-text)
+
+// ...hover & focused
+.main-contextMenu-menuItemButton:not([aria-checked=true]):focus, .main-contextMenu-menuItemButton:hover
 	background-color: var(--spice-selected-row)
 
-// Context menu border
+// ...border and no overflow
 .main-contextMenu-menu
 	border: var(--spice-selected-row) 3px solid
+	overflow-y: hidden
+
+// ...expanded
+.main-contextMenu-menuItemButton[aria-expanded=true]
+	background-color: var(--spice-selected-row)
 
 // Remove useless search text
 input.x-filterBox-filterInput::placeholder
-	font-size: 0 
+	font-size: 0
 
+// Filter box colors
+input.x-filterBox-filterInput
+	color: var(--spice-text)
+	background-color: var(--spice-selected-row)
+// ... icon colors
+svg.x-filterBox-searchIcon,  button[aria-label="Clear search field"] > svg
+	fill: var(--spice-text)
+
+// Alignment man...
 div[role="menuitem"] > div.x-filterBox-filterInputContainer
 	left: 2px
 	top: 3px
